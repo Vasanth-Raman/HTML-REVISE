@@ -1,0 +1,92 @@
+<!--Attributes are nothing but the key-value pair-->
+
+<!--whenever you are trying to create some tags it has some kinda attributes.
+
+for the time being assume that we're gonna create input tag-->
+
+<!--In this below mentioned input tag . key is 'type' & value is 'text'. similarly 'placeholder' is key & 'Name' is value-->
+
+<!--Tag is actually a syntax && Attributes are basically is to determine the properties of certain tag. -->
+
+<!--Eg-->
+
+ <!--place holder is a temporary dispaly value in input fields-->
+
+<input type="text" placeholder="Name">
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--what is value attribute-->
+
+<!--Value attribute is something that actually have the value for several tag-->
+
+<!--Eg-->
+
+<input type="text" value="INDIA" placeholder="Country">
+
+<!--Assuming that we creating form to select nationality. Here by default we will be having INDIA as value in the 'text input tag'.
+We can also able to backspace it.-->
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--what is disabled attribute-->
+
+<!--disabled attribute is used when the value dont want to be changed, button dont want to be submit. like that kinda things-->
+
+<!--The beauty in this is we dont even want to set value in key-value; only the key 'disabled' is enough to say it is disabled-->
+
+<!--Eg-->
+
+<input type="text" value="INDIA" placeholder="Country" disabled="">
+<input type="button" value="click" disabled>
+<button disabled>What Now</button>
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--Importance of name attribute-->
+
+<!--Name attribute is used by the server to identify the fields in form submits-->
+
+<!--In simple word backend needs to understand what actually user is submitting in certain input fields-->
+
+<!--best example to understand name attribute;
+
+You are giving a exam and writing the answer for particular question without mentioning the question number.
+If u do that so how could be the teacher or invigilator understands what the answer is for huh?
+By giving the qustn no teacher could able to understands what the answer is for -->
+
+<input type="text" value="INDIA" placeholder="Country" name="country"> <!--country is the questin number for this input field-->
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--min && max-->
+
+<input type="number" name="num" min="18" max="90">
+
+<!--minlength && maxlength-->
+
+<input type="text" name="firstName" minlength="10" maxlength="15">
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--autofocus-->
+
+<!--similar to disabled attribute only require key not value & used to focus where the user currently is-->
+
+<input type="text" placeholder="Name" autofocus>
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--size-->
+
+<!--determine the width of the input area(box)-->
+
+<input type="text" placeholder="Name" size="30">
+
+<!------------------------------------------------------------------------------------------------------------------->
+
+<!--Form attributes - action & method-->
+
+<!--action attributes represent the url where the form has to be submit-->
+
+<!--method attributes represent the rules of sending data; get , post-->
